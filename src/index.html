@@ -5,14 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page title</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <script src="./index.js"></script>
+    
   </head>
   <body>
-
+    <div class="container">
     <form class="search-form" id="search-form">
       <input type="text" name="searchQuery" autocomplete="off" placeholder="Search images..." />
-      <button type="submit">Search</button>
+      <button type="submit" class="submit-btn"><svg width="17" height="17">
+        <use href="./images/sprite.svg#icon-search"></use>
+      </svg></button>
     </form>
-    
+    <div class="gallery">
+      <!-- Картки зображень -->
+    </div>
+    <button type="button" class="load-more hidden">Load more</button>
+    </div>
+    <script src="./index.js" type="module"></script>
   </body>
 </html>
